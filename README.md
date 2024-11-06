@@ -1,50 +1,21 @@
-# Welcome to your Expo app 👋
+# Installation:
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Go to utils/FirebaseConfig.ts and configure your own Firebase API.
 
-## Get started
+Run `npm install` to download the necessary packages.
 
-1. Install dependencies
+Install the Backend of this project from https://github.com/Gameboy612/TARGETS-Cathay-Hackathon-2024-Backend. Then, get the URL of the hosting Flask application, no matter from AWS or from localhost, and type it into `constants/website.ts`.
 
-   ```bash
-   npm install
-   ```
+You may register an account upon starting the application.
 
-2. Start the app
+We used technologies which allowed us to create custom seat maps using JSON format. You can take a look at it at 
+`features/user/plane_seats/components/PlaneSeatsScreen.tsx`.
 
-   ```bash
-    npx expo start
-   ```
+Technologies used:
+1. React Native
+2. Firebase for User Management
+3. SocketIO for instantaneous updates between accounts
+4. Flask for Backend management
+5. MongoDB for Database
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+You can try out with multiple instances of the browser, and it will sync across the devices.
